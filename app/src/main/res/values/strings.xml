@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RetroFitPath</string>
+    <string name="loading_failed">Error al cargar\n</string>
+    <string name="retry">Reintentar\n</string>
+    <string name="loading">Cargando\n</string>
+    <string name="amphibian_image">Imagen de Amfibio\n</string>
+</resources>
