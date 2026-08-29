@@ -24,6 +24,13 @@ roomVersion = "2.8.4"
 # KSP
 kspVersion = "2.3.10"
 
+# Hilt
+hiltVersion = "2.60.1"
+hiltNavigationComposeVersion = "1.4.0"
+
+# NavController
+navControllerVersion = "2.10.0"
+
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -62,9 +69,25 @@ room-compiler = { group = "androidx.room", name = "room-compiler", version.ref =
 room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomVersion" }
 
 
+# Hilt
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hiltVersion" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hiltVersion" }
+hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigationComposeVersion" }
+
+
+# NavController
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navControllerVersion" }
+
+
+#Icons
+android-icons = { group = "androidx.compose.material", name = "material-icons-extended" }
+
+
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "kspVersion" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hiltVersion" }
 
 
